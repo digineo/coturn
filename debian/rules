@@ -10,6 +10,11 @@ export DH_VERBOSE=1
 # This has to be exported to make some magic below work.
 export DH_OPTIONS
 
+export TURN_NO_PQ=1
+export TURN_NO_MYSQL=1
+export TURN_NO_SQLITE=1
+export TURN_NO_HIREDIS=1
+
 override_dh_auto_install:
 	true
 
